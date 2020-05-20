@@ -1,0 +1,25 @@
+{
+"usersPass" : [
+	{
+	"user" : "rommel",
+	"password" : "123456"
+	},
+	{
+        "user" : "marco",
+        "password" : "654321"
+        },
+	{
+        "user" : "simone",
+        "password" : "111111"
+        },
+	{
+        "user" : "vitor",
+        "password" : "senha"
+        },
+	{
+        "user" : "heric",
+        "password" : "minhasenha"
+        }
+
+]
+}

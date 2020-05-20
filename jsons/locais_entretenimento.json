@@ -1,0 +1,132 @@
+{ 
+    "locais_entretenimento" : [
+        {
+            "nome" : "Almanaque Choperia",
+            "descricao" : "Bar casual e moderno que serve vários pratos, lanches e coquetéis criativos e inovadores.",
+            "logradouro" : "Rua Pium-Í",
+            "numero" : 675,
+            "complemento" : "Casa comercial",
+            "bairro" : "Cruzeiro",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3287-9044",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica" : "Bar",
+            "categoria_especifica2": "Chopperia",
+            "foto" : ""
+            
+        },
+        
+        {
+            "nome" : "Porcão BH",
+            "descricao" : "Restaurante espaçoso e familiar que oferece grande variedade de grelhados e sobremesas.",
+            "logradouro" : "Av. Raja Gabáglia",
+            "numero" : 2671,
+            "complemento" : "Casa comercial",
+            "bairro" : "São Bento",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3293-8787",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Restaurante",
+            "categoria_especifica2": "Churrascaria",
+            "foto" : ""
+        },
+        {
+            "nome" : "Baby Beef - Cristiano Machado",
+            "descricao" : "Rodízio de carnes nobres em churrascaria contemporânea com buffet de sushis e massas e ambiente familiar.",
+            "logradouro" : "Av. Cristiano Machado",
+            "numero" : 4000,
+            "complemento" : "Casa comercial",
+            "bairro" : "União",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3426-1100",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Restaurante",
+            "categoria_especifica2": "Churrascaria",
+            "foto" : ""
+        },
+        {
+            "nome" : "Albanos | Hub Cervejeiro",
+            "descricao" : "Casa especializada em chopes também oferece petiscos e grelhados, em espaço descontraído com área externa.",
+            "logradouro" : "Rua Pium-Í",
+            "numero" : 611,
+            "complemento" : "Casa comercial",
+            "bairro" : "Sion",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3281-2644",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Bar",
+            "categoria_especifica2": "Chopperia",
+            "foto" : ""
+        },
+        {
+            "nome" : "Bar da Cácia",
+            "descricao" : "Noites animadas em ponto de encontro simples e descontraído com festas de karaokê, cervejas e comidinhas.",
+            "logradouro" : "Rua Rio de Janeiro",
+            "numero" : 1411,
+            "complemento" : "Casa comercial",
+            "bairro" : "Centro",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3222-3260",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Bar",
+            "categoria_especifica2": "LGBT",
+            "foto" : ""
+        },
+        {
+            "nome" : "Bar e Restaurante da Cledir",
+            "descricao" : "Bar LGBT no núcleo de BH. Perto do Mercado Central e diversos pontos turísticos.",
+            "logradouro" : "Av. Augusto de Lima",
+            "numero" : 685,
+            "complemento" : "Casa comercial",
+            "bairro" : "Centro",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3789-1154",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Bar",
+            "categoria_especifica2": "LGBT",
+            "foto" : ""
+        },
+        {
+            "nome" : "Jângal",
+            "descricao" : "Bar rústico e artístico com coquetéis, porções, terraço coberto, plantas, música ao vivo e muito mais.",
+            "logradouro" : "Rua Outono",
+            "numero" : 523,
+            "complemento" : "Casa comercial",
+            "bairro" : "Cruzeiro",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3653-8947",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Bar",
+            "categoria_especifica2": "Pub",
+            "foto" : ""
+        },
+        {
+            "nome" : "Jack Rock Bar",
+            "descricao" : "Rock 'n' roll ao vivo em um clube boêmio com pôsteres de bandas famosas, mesas de sinuca, TV e sushi.",
+            "logradouro" : "Av. do Contorno",
+            "numero" : 5623,
+            "complemento" : "Casa comercial",
+            "bairro" : "Funcionários",
+            "cidade" : "Belo Horizonte - MG",            
+            "telefone" : "(31) 3227-4510",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Bar",
+            "categoria_especifica2": "Pub",
+            "foto" : ""
+        },
+        {
+            "nome" : "Amsterdam Pub",
+            "descricao" : "Casa noturna inspirada na Holanda com cerveja, sinuca, área de fumantes e rock 'n' roll ao vivo.",
+            "logradouro" : "Rua Major Lopes",
+            "numero" : 719,
+            "complemento" : "Casa comercial",
+            "bairro" : "São Pedro",
+            "cidade" : "Belo Horizonte - MG",
+            "telefone" : "(31) 3262-0688",
+            "categoria_geral" : "Entretenimento",
+            "categoria_especifica": "Bar",
+            "categoria_especifica2": "Pub",
+            "foto" : ""
+        }
+    ]
+}

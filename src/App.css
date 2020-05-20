@@ -1,0 +1,214 @@
+/**********************Header horizontal*********************/
+.cabecalho {
+    position: relative;
+    float : right;
+    right: 7%;
+}
+.itemCabecalho {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.logoIcon {
+    width: 150px;
+    margin: 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+/******************Logo index intro*********************/
+.logoIntro{ /*div*/
+    position: absolute;
+    left: 650px;
+    top: 150px;
+}
+
+#logoIntro {
+    width: 300px; /*foto*/
+}
+/*********Vertical Header**********/
+.headerVertical {
+    position: absolute;
+    width: 250px;
+    height: 900px;
+    background-color: #f8f8f8;
+}
+.tabelaHeader {
+    display: block;
+    position: absolute;
+    width: 515px;
+    height: 450px;
+    color: #585858;
+}
+#tituloMode{
+    position: relative;
+    font-weight: bold;
+    left: -50px;
+}
+.tituloPesq{
+    font-weight: bold;
+}
+li.itemVerticalHeader {
+    list-style: none;
+    vertical-align: center;
+    position: relative;
+    padding: 0px;
+    padding-left: 30px;
+    width: 250px;
+
+}
+#pesquisar:hover  #independente {
+    opacity: 1;
+    display: block;
+    transition:0.5s;
+}
+#independente {
+    display: none;
+    position: relative;
+    left: 175px;
+    top: -95px;
+    opacity: 0;
+    background-color: #f8f8f8;
+    padding-top: 10px;
+    /*padding-bottom: 400px; /*esse padding só é necessário enquanto nao tem a ferramenta de Comparar ainda.*/
+    padding-right: 5px;
+    border-radius: 3px;
+    height: 530px;
+    
+}
+.icon20 {
+    width:20px;
+}
+#cliente {
+    position: absolute;
+    height: 40px;
+    width: 220px;
+    vertical-align: 50%;
+    padding-bottom: 20px;
+    left: 0px; 
+}
+#pesquisar {
+    position: absolute;
+    height: 40px;
+    width: 220px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    left: 0px;
+    top: 80px;
+    background-color: #e6e4e4;
+}
+#pesquisar:hover {
+    background-color: #cccccc;
+}
+#cadastrar {
+    position: absolute;
+    height: 40px;
+    width: 220px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    left: 0px;
+    top: 200px;
+    background-color: #e6e4e4;
+}
+#cadastrar:hover {
+    background-color: #cccccc;
+}
+#cadastrar:hover .loginPreCadastro{
+    display: block;
+}
+
+#empresa {
+    position: absolute;
+    top: 140px;
+    height: 40px;
+    left: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    width: 220px;
+}
+/************Configura redes sociais no rodape do header vertical********/
+.redesSociais {
+    position: relative;
+    top: 455px;
+    list-style: none;
+    left: -10px;
+}
+.logoRedes {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin-left: 0px;
+}
+/*****Configura login pré-cadastrar estabelecimento****/
+.loginPreCadastro {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    color: #f8f8f8;
+    width: 280px;
+    height: 280px;
+    border: 1px solid white;
+    top: -95px;
+    left: 185px;
+    list-style: none;
+    text-align: center;
+    display: none; /*ativado com o hover pelo Cadastrar Estabelecimento*/
+}
+.inputLogin {
+    width: 180px;
+    background-color: #f8f8f8;
+    height: 18px;
+}
+.botaoCadastrar{
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    color: #585858;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    color: #585858;
+    margin-right: 15px;
+}
+
+.botaoConfirmar{
+    background: none;
+    border-radius: 3px;
+    color: #585858;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    color: white;
+    margin-right: 15px;
+}
+/**************Configura botoes e inputs*****************/
+.inputText {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    width: 230px;
+    height: 40px;
+    
+}
+.botaoPesquisar {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    color: #585858;
+    padding: 10px;
+    float: right;
+}
+/*********************Footer***************************/
+footer {
+    display: block;
+    position: absolute;
+    background-color: #f8f8f8;
+    margin: auto;
+    color: #585858;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    padding-left: 150px;
+    top: 580px; /*850 para fora do index*/
+}
