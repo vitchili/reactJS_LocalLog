@@ -1,0 +1,23 @@
+.divContato {
+    background-color: white;
+    position: absolute;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+    color: #585858;
+    width: 750px;
+    margin-right: 130px;
+    background-color: white;
+    top: 150px;
+    left: 50px;
+    height: 350px;
+}
+.formularioContato {
+    padding: 0px;
+}
+.inputTextForm{   
+    border-radius:0px;
+    background: none; 
+    border:1px solid #bbbbbb;
+    width:400px
+}

@@ -3,12 +3,10 @@
         {
             "nome" : "Marcio Transportes BH, Carretos e Mudanças",
             "descricao" : "Mudanças em Belo Horizonte, Minas Gerais.",
-            "endereco" : [
-                {"logradouro" : "Rua Oriental"},
-                {"numero" : 61},
-                {"bairro" : "São Lucas"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua Oriental",
+            "numero" : 61,
+            "bairro" : "São Lucas",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : " (31) 99651-8046",
             "categoria_geral" : "Servicos",
             "categoria_especifica" : "Carreto",
@@ -18,12 +16,10 @@
         {
             "nome" : "Pintar BH",
             "descricao" : "Pinturas emergenciais aberto 24h",
-            "endereco" : [
-                {"logradouro" : "Serviço online"},
-                {"numero" : "null"},
-                {"bairro" : "null"},
-                {"cidade" : "null"}
-            ],
+            "logradouro" : "Serviço online",
+            "numero" : "null",
+            "bairro" : "null",
+            "cidade" : "null",
             "telefone" : "(31) 99172-3752",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Pintura",
@@ -32,12 +28,10 @@
         {
             "nome" : "BH Pinturas",
             "descricao" : "Pintor em Belo Horizonte, Minas Gerais",
-            "endereco" : [
-                {"logradouro" : "Av dos Andradas"},
-                {"numero" : 302},
-                {"bairro" : "Centro"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Av dos Andradas",
+            "numero" : 302,
+            "bairro" : "Centro",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 98818-9943",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Pintura",
@@ -46,12 +40,10 @@
         {
             "nome" : "Ikebana Flores",
             "descricao" : "Floricultura em Belo Horizonte, Minas Gerais",
-            "endereco" : [
-                {"logradouro" : "Av. Getúlio Vargas"},
-                {"numero" : 1697},
-                {"bairro" : "Funcionários"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Av. Getúlio Vargas",
+            "numero" : 1697,
+            "bairro" : "Funcionários",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 2116-1485",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Floricultura",
@@ -60,12 +52,10 @@
         {
             "nome" : "M & M Floricultura",
             "descricao" : "Floricultura em Belo Horizonte, Minas Gerais",
-            "endereco" : [
-                {"logradouro" : "Rua Pouso Alegre"},
-                {"numero" : 2114},
-                {"bairro" : "Horto"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua Pouso Alegre",
+            "numero" : 2114,
+            "bairro" : "Horto",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 3461-3137",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Floricultura",
@@ -74,12 +64,10 @@
         {
             "nome" : "Chaveiro Chaves",
             "descricao" : "Chaveiro 24 horas no centro de BH.",
-            "endereco" : [
-                {"logradouro" : "Rua Espírito Santo"},
-                {"numero" : 621},
-                {"bairro" : "Centro"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua Espírito Santo",
+            "numero" : 621,
+            "bairro" : "Centro",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : " (31) 98465-9985",
             "categoria_geral" : "Servicos",
             "categoria_especifica" : "Chaveiro",
@@ -89,12 +77,10 @@
         {   
             "nome" : "Lavanderia Slim BH",
             "descricao" : "Lavandeira comercial para público geral.",
-            "endereco" : [
-                {"logradouro" : "Serviço online"},
-                {"numero" : "null"},
-                {"bairro" : "null"},
-                {"cidade" : "null"}
-            ],
+            "logradouro" : "Serviço online",
+            "numero" : "null",
+            "bairro" : "null",
+            "cidade" : "null",
             "telefone" : "(31) 99172-3752",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Lavanderia",
@@ -103,12 +89,10 @@
         {
             "nome" : "Quadras Celpe Aluguel de Quadras Escola de Futebol",
             "descricao" : "Quadra de esportes em Belo Horizonte, Minas Gerais",
-            "endereco" : [
-                {"logradouro" : "Rua Vila Rica"},
-                {"numero" : 687},
-                {"bairro" : "Padre Eustáquio"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua Vila Rica",
+            "numero" : 687,
+            "bairro" : "Padre Eustáquio",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 3462-1923",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Aluguel de Quadras",
@@ -117,12 +101,10 @@
         {
             "nome" : "NEDI - Núcleo Educacional de Design e Inteligência",
             "descricao" : "Escola de design em Belo Horizonte",
-            "endereco" : [
-                {"logradouro" : "Av. do Contorno"},
-                {"numero" : 2905},
-                {"bairro" : "Santa Efigênia"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Av. do Contorno",
+            "numero" : 2905,
+            "bairro" : "Santa Efigênia",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 3236-1419",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Design",
@@ -131,12 +113,10 @@
         {
             "nome" : "Abreu Mudanças em Belo Horizonte",
             "descricao" : "Pequenas mudanças, caminhão, carreto de mudanças em BH",
-            "endereco" : [
-                {"logradouro" : "Serviço online"},
-                {"numero" : "null"},
-                {"bairro" : "null"},
-                {"cidade" : "null"}
-            ],
+            "logradouro" : "Serviço online",
+            "numero" : "null",
+            "bairro" : "null",
+            "cidade" : "null",
             "telefone" : "(31) 99399-4214",
             "categoria_geral" : "Serviços",
             "categoria_especifica": "Carreto",

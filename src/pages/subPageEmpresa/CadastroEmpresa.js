@@ -1,38 +1,21 @@
 import React from 'react';
 import '../../styleComponents/empresa.css';
+import {Link} from 'react-router-dom';
 
-class CadastroEmpresa extends React.Component{
-    getForm(){
-        let nome = document.getElementById('nome').value;
-        let desc = document.getElementById('desc').value;
-        let logradouro = document.getElementById('logradouro').value;
-        let numero = document.getElementById('numero').value;
-        let complemento = document.getElementById('complemento').value;
-        let bairro = document.getElementById('bairro').value;
-        let cidade = document.getElementById('cidade').value;
-        let telefone = document.getElementById('telefone').value;
-        let catGeral = document.getElementById('selectCategoriaGeral').value;
-        let catEspecifica = document.getElementById('selectCategoriaEspecifica').value;
-        let imgPath = document.getElementById('imageEstabelecimento').value;
-        
-        //Faz alguma coisa no bd
-        let stringJSON = `{"nome" : "${nome}", "desc" : "${desc}", "endereco" : [{"logradouro" : "${logradouro}", {"numero" : "${numero}", {"complemento" : "${complemento}"}, {"bairro" : "${bairro}"}, {"cidade" : "${cidade}"}], "telefone" : "${telefone}", "catGeral" : "${catGeral}", "catEspecifica": "${catEspecifica}", "imgPath" : "${imgPath}"}`;
-        let formJSON = JSON.parse(stringJSON);
-
-    }
-        render(){
+class CadastroEmpresa extends React.Component{    
+    render(){
         return(
             <div className="divCadastro">
                 <h1>Cadastrar estabelecimento</h1>
-                <form type="post" encType="multipart/form-data">
-                    <p>Nome*: <input type="text" id="nome" className="inputTextForm"/></p>
-                    <p>Descrição*: <textarea id="desc" rows="2" cols="48"/></p><br/>
-                    <p>Logradouro*: <input type="text" id="logradouro" className="inputTextForm"/></p>
-                    <p>Número*: <input type="number" id="numero" className="inputNumber"/></p>
-                    <p> Complemento: <input type="text" id="complemento" className="inputTextForm"/></p>
-                    <p> Bairro*: <input type="text" id="bairro" className="inputTextForm"/></p>
-                    <p> Cidade*: <input type="text" id="cidade" className="inputTextForm"/></p>
-                    <p> Telefone*: <input type="text" id="telefone" className="inputTextForm"/></p> 
+                <form action="/getDadosCadastro" method="POST" className="formCadastro">
+                    <p>Nome*: <input type="text" name="nome" className="inputTextForm"/></p>
+                    <p>Descrição*: <input type="text" name="desc" className="inputTextForm"/></p>
+                    <p>Logradouro*: <input type="text" name="logradouro" className="inputTextForm"/></p>
+                    <p>Número*: <input type="number" name="numero" className="inputTextForm"/></p>
+                    <p> Complemento: <input type="text" name="complemento" className="inputTextForm"/></p>
+                    <p> Bairro*: <input type="text" name="bairro" className="inputTextForm"/></p>
+                    <p> Cidade*: <input type="text" name="cidade" className="inputTextForm"/></p>
+                    <p> Telefone*: <input type="text" name="telefone" className="inputTextForm"/></p> 
                     <br/>
                     <p>
                         Categoria geral*:&nbsp; 
@@ -47,7 +30,7 @@ class CadastroEmpresa extends React.Component{
                             <option value="restaurante">Restaurante</option>
                             <option value="chopperia">Chopperia</option>
                             <option value="churrascaria">Churrascaria</option>
-                            <option value="lGBT">LGBT</option>
+                            <option value="lgbt">LGBT</option>
                             <option value="pub">Pub</option>
                             <option value="bar">Bar</option>
                             <option value="shopping">Shopping</option>
@@ -124,8 +107,10 @@ class CadastroEmpresa extends React.Component{
                     </p>
                     <p>Imagem do estabelecimento*:<br/>
                     <small>(Max-width: 800px)</small>&nbsp;<input type="file" id="imageEstabelecimento"/></p>
-                    <input type="submit" value="Confirmar" id="botaoConfirmar" onClick={() => {this.getForm()}}/>
-                    <input type="button" value="Voltar" id="botaoVoltar"/>
+                    <input type="submit" value="Confirmar" id="botaoConfirmar" />
+                    <Link to="/empresa">    
+                        <input type="button" value="Voltar" id="botaoVoltar"/>
+                    </Link>
                 </form>
             </div>
         );

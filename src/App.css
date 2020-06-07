@@ -1,3 +1,4 @@
+
 /**********************Header horizontal*********************/
 .cabecalho {
     position: relative;
@@ -31,7 +32,7 @@
 .headerVertical {
     position: absolute;
     width: 250px;
-    height: 900px;
+    height: 805px;
     background-color: #f8f8f8;
 }
 .tabelaHeader {
@@ -56,7 +57,6 @@ li.itemVerticalHeader {
     padding: 0px;
     padding-left: 30px;
     width: 250px;
-
 }
 #pesquisar:hover  #independente {
     opacity: 1;
@@ -74,7 +74,7 @@ li.itemVerticalHeader {
     /*padding-bottom: 400px; /*esse padding só é necessário enquanto nao tem a ferramenta de Comparar ainda.*/
     padding-right: 5px;
     border-radius: 3px;
-    height: 530px;
+    height: 620px;
     
 }
 .icon20 {
@@ -127,38 +127,6 @@ li.itemVerticalHeader {
     padding-bottom: 0px;
     width: 220px;
 }
-/************Configura redes sociais no rodape do header vertical********/
-.redesSociais {
-    position: relative;
-    top: 455px;
-    list-style: none;
-    left: -10px;
-}
-.logoRedes {
-    width: 15px;
-    height: 15px;
-    padding: 5px;
-    margin-left: 0px;
-}
-/*****Configura login pré-cadastrar estabelecimento****/
-.loginPreCadastro {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative;
-    color: #f8f8f8;
-    width: 280px;
-    height: 280px;
-    border: 1px solid white;
-    top: -95px;
-    left: 185px;
-    list-style: none;
-    text-align: center;
-    display: none; /*ativado com o hover pelo Cadastrar Estabelecimento*/
-}
-.inputLogin {
-    width: 180px;
-    background-color: #f8f8f8;
-    height: 18px;
-}
 .botaoCadastrar{
     background-color: #f8f8f8;
     border-radius: 3px;
@@ -206,9 +174,9 @@ footer {
     background-color: #f8f8f8;
     margin: auto;
     color: #585858;
-    width: 90%;
+    width: 100%;
     height: 40px;
     text-align: center;
     padding-left: 150px;
-    top: 580px; /*850 para fora do index*/
+    bottom: 0px; /*850 para fora do index*/
 }

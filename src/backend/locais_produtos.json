@@ -3,12 +3,10 @@
         {
             "nome" : "Othon de Carvalho Material Elétrico",
             "descricao" : "Loja de materiais elétricos em Belo Horizonte, Minas Gerais.",
-            "endereco" : [
-                {"logradouro" : "Rua dos Tupis"},
-                {"numero" : 1277},
-                {"bairro" : "Barro Preto"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua dos Tupis",
+            "numero" : 1277,
+            "bairro" : "Barro Preto",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 2103-3000",
             "categoria_geral" : "Produtos",
             "categoria_especifica": "Elétrica",
@@ -18,12 +16,10 @@
         {
             "nome" : "Leroy Merlin BH Norte",
             "descricao" : "Loja de materiais de construção em Belo Horizonte, Minas Gerais",
-            "endereco" : [
-                {"logradouro" : "Av. Pastor Anselmo Silvestre"},
-                {"numero" : 1495},
-                {"bairro" : "Dom Joaquim"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Av. Pastor Anselmo Silvestre",
+            "numero" : 1495,
+            "bairro" : "Dom Joaquim",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 4020-5376",
             "categoria_geral" : "Produtos",
             "categoria_especifica": "Construção",
@@ -32,12 +28,10 @@
         {
             "nome" : "Telhanorte Amazonas",
             "descricao" : "Loja de materiais de construção",
-            "endereco" : [
-                {"logradouro" : "Av. Amazonas"},
-                {"numero" : 4368},
-                {"bairro" : "Nova Suiça"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Av. Amazonas",
+            "numero" : 4368,
+            "bairro" : "Nova Suiça",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 2101-9550",
             "categoria_geral" : "Produtos",
             "categoria_especifica": "Construção",
@@ -46,12 +40,10 @@
         {
             "nome" : "Depósito Chicão Sagrada Familia",
             "descricao" : "Loja de materiais de construção em Belo Horizonte, Minas Gerais",
-            "endereco" : [
-                {"logradouro" : "Rua Conselheiro Lafaiete"},
-                {"numero" : 641},
-                {"bairro" : "Sagrada Família"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua Conselheiro Lafaiete",
+            "numero" : 641,
+            "bairro" : "Sagrada Família",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 3481-9400",
             "categoria_geral" : "Produtos",
             "categoria_especifica": "Construção",
@@ -60,12 +52,10 @@
         {
             "nome" : "Supermercado Santa Tereza - Supervarejista",
             "descricao" : "Supermercado do bairro. Bom e barato",
-            "endereco" : [
-                {"logradouro" : "Rua Hermilo Alves"},
-                {"numero" : 35},
-                {"bairro" : "Santa Tereza"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Rua Hermilo Alves",
+            "numero" : 35,
+            "bairro" : "Santa Tereza",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "(31) 3213-2474",
             "categoria_geral" : "Produtos",
             "categoria_especifica": "Supermercado",
@@ -74,12 +64,10 @@
         {
             "nome" : "DIA Supermercado",
             "descricao" : "Supermercado local",
-            "endereco" : [
-                {"logradouro" : "Av. Silviano Brandão"},
-                {"numero" : 2041},
-                {"bairro" : "Horto"},
-                {"cidade" : "Belo Horizonte - MG"}
-            ],
+            "logradouro" : "Av. Silviano Brandão",
+            "numero" : 2041,
+            "bairro" : "Horto",
+            "cidade" : "Belo Horizonte - MG",
             "telefone" : "0800 775 1080",
             "categoria_geral" : "Produtos",
             "categoria_especifica": "Supermercado",

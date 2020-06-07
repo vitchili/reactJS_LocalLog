@@ -6,9 +6,14 @@ import Cliente from './pages/Cliente.js';
 import Empresa from './pages/Empresa.js';
 import CadastroEmpresa from './pages/subPageEmpresa/CadastroEmpresa.js'
 import EntretenimentoCliente from './pages/subPageEmpresa/EntretenimentoCliente.js'
+import ProdutosCliente from './pages/subPageEmpresa/ProdutosCliente.js'
+import ServicosCliente from './pages/subPageEmpresa/ServicosCliente.js'
 import Footer from './components/Footer';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Login from './pages/Login';
+import Contato from './pages/Contato';
+
 
 class App extends React.Component{
   render(){
@@ -24,21 +29,36 @@ class App extends React.Component{
                 </Route>
                 <Route path="/empresa">
                     <Empresa />
-                    <Header />
-                    <VerticalHeader />  
+                    <Header /> 
                     <Route path="/empresa/cadastro">
                         <CadastroEmpresa />
                     </Route>
+                    <VerticalHeader /> 
                 </Route>
                 <Route path="/cliente">
                     <Cliente />
                     <Route path="/cliente/entretenimento">
                         <EntretenimentoCliente /> 
                     </Route>
+                    <Route path="/cliente/produtos">
+                        <ProdutosCliente /> 
+                    </Route>
+                    <Route path="/cliente/servicos">
+                        <ServicosCliente /> 
+                    </Route>
                     <Header />
                     <VerticalHeader />
                 </Route>
-                                    
+                <Route path="/login">
+                    <Header />
+                    <Login />
+                    <Footer />
+                </Route>
+                <Route path="/contato">
+                    <Contato />
+                    <Header />
+                    <Footer />
+                </Route>
             </Switch>  
         </Router>
       </div>

@@ -10,6 +10,12 @@ body {
     background-repeat: no-repeat;
     max-width: 100%;
   }
+@media screen and (min-width: 1200px){
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

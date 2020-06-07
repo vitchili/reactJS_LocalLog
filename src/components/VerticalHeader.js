@@ -67,29 +67,20 @@ class VerticalHeader extends React.Component{
                     <li id="empresa" className="itemVerticalHeader">
                         <img src={iconEmpresa} alt="iconEmpresa" className="icon20"/> Empresa      
                     </li>
-                    <li id="cadastrar"><br/>Cadastrar/Modificar >
-                        <ul>
-                            <li className="loginPreCadastro">
-                                <p className="tituloPesq">Faça login!</p>
-                                <p>Usuário*: <input type="text" className="inputLogin"  onChange={(event) => {this.getUserDigitado(event)}}/></p>
-                                <p>Senha*: &nbsp;<input type="password" className="inputLogin"  onChange={(event) => {this.getPassDigitado(event)}}/></p>
-                                <br/>
-                                <input type="button" value="Cadastrar" className="botaoCadastrar"/>
-                                <Link to="/empresa">
-                                    <input type="button" value="Confirmar" className="botaoConfirmar" onClick={() => this.validaUserPass()}/>
-                                </Link>                            
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="redesSociais">
-                        <img src={logoFace} alt="facebook" className="logoRedes"/>
-                        <img src={logoInsta} alt="instagram" className="logoRedes"/>
-                        <img src={logoWhats} alt="whatsapp" className="logoRedes"/>
-                    </li>
+                    <Link to="/login">
+                    <li id="cadastrar"><br/>Cadastrar/Modificar ></li>
+                    </Link>                            
+                        
                 </ul>
             </header>
         );
     }
+}
+
+export default VerticalHeader;
+
+/*
+
     getUserDigitado = (event) =>{
         this.setState({userDigitado : event.target.value});
         console.log(this.state.userDigitado);
@@ -132,6 +123,4 @@ class VerticalHeader extends React.Component{
             throw new Error("Usuário ou senha incorretos.");
         }
     }
-}
-
-export default VerticalHeader;
+*/

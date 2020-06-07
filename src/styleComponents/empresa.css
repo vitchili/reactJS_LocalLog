@@ -8,10 +8,10 @@
     .enterpriseMode {
         position: absolute;
         width: 70%;
-        height: 650px;
+        height: 100%;
         margin: auto;
         top: 90px;
-        left: 270px;
+        left: 330px;
         padding-left: 100px;
         opacity: .9;
         border-radius: 5px;
@@ -27,6 +27,7 @@
         width: 550px;
         right: 0px;
         left: 300px;
+        overflow-y: scroll;
     }
 }
 @media screen and (max-width: 999px){ 
@@ -34,15 +35,34 @@
     .enterpriseMode {
         position: absolute;
         width: 90%;
-        height: 1000px;
+        height: 100%;
         margin: auto;
         top: 90px;
         left: 270px;
         padding-left: 100px;
-        opacity: .9;
-        background-color: white;
         border-radius: 5px;
+        
     }
+
+.divCadastro {
+    position: absolute;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 3px;
+    color: #585858;
+    width: 750px;
+    height: 400px;
+    right: 10px;
+    margin-right: 130px;
+    background-color: white;
+    top: 550px;
+    overflow-y: scroll;
+}
+.formCadastro{
+    position: relative;
+    top: -50px;
+    margin-top: 0px;
+}
 
     .acoesImgEmpresa {
         width : 250px;
@@ -52,36 +72,30 @@
         padding-left: 15px;
     }
 }
-@media screen and (min-width: 1200px){ 
-    .acoesImgEmpresa {
-        box-shadow: 3px 3px 10px;
-        width : 230px;
-    }
-}
 @media screen and (min-width: 1000px) and (max-width: 1999px){ 
     .acoesImgEmpresa {
-        width : 230px;
+        width : 180px;
+        box-shadow: 3px 3px 10px;
     }
-}
 .divCadastro {
     position: absolute;
     text-align: justify;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #585858;
-    width: 550px;
-    right: 0px;
+    width: 750px;
+    height: 400px;
+    right: 10px;
     margin-right: 130px;
     background-color: white;
-    top: 250px;
+    top: 230px;
+    overflow-y: scroll;
 }
-
-.inputNumber{
-    position: absolute;
-    width: 50px;
-    height: 20px;
-    margin: 5px;
-    right: 0px;
+.formCadastro{
+    position: relative;
+    top: -50px;
+    margin-top: 0px;
+}
 }
 textarea {
     position: absolute;
@@ -93,14 +107,13 @@ h1 {
     color: #585858;
 }
 .inputTextForm {
-    position: absolute;
-    margin: 5px;
+    position: relative;
     width: 400px;
     height: 20px;
     right: 0px;
 }
 p {
-    margin: 10px;
+    margin: 5px;
 }
 /*********botoes cadastro*************/
 
