@@ -1,0 +1,78 @@
+@media screen and (max-width: 999px){ 
+    .acoesImgCliente {
+        width : 130px;
+        background-color: white;
+        border-radius: 5px;
+        opacity: .9;
+    }
+    .acaoCliente {
+        list-style: none;
+        padding-left: 15px;
+    }
+}
+@media screen and (min-width: 1200px){ 
+    .acoesimgCliente {
+        box-shadow: 3px 3px 10px;
+        width : 230px;
+    }
+    .acaoCliente {
+        list-style: none;
+        display: inline-block;
+        padding-left: 15px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1999px){ 
+    .acoesImgCliente {
+        width : 130px;
+        background-color: white;
+        border-radius: 5px;
+        opacity: .9;
+        
+    }
+}
+
+/********************/
+.tituloCliente {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16pt;
+    color: white;
+    padding: 5px;
+}
+.tituloEstabelecimento {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16pt;
+    color: #3b3a3a;
+    padding: 5px;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    color: #3b3a3a;
+}
+.paragrafoEstabelecimentos {
+    font-size: 11pt;
+    color: #3b3a3a;
+}
+.corpoCliente {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    top: 10px;
+    left: 100px;
+    padding-left: 150px;
+    border-radius: 5px;
+}
+.pageEstabelecimentos {
+    position: absolute;
+    padding: 5px;
+    width: 900px;
+    border-radius: 3px;
+    box-shadow: 7px 7px 10px rgba(1,1,1,.8);
+    height: 500px;
+    margin: auto;
+    top: 125px;
+    left: 300px;
+    overflow-y: scroll;
+    background-color: white;
+}
