@@ -1,0 +1,5 @@
+Esse é um mini tutorial para quem não sabe mexer com react js poder testar o projeto.
+a Home está em Src > App.js. Lá contem as rotas que linka todas as páginas. 
+Todo o projeto é construido em cima do javascript, e este faz a comunicação com os arquivos css.
+Todas rotas são impressas, dinamicamente, no mesmo arquivo index.html, por meio da lógica de componentes. Isso torna a interação mais rápida, já que
+não é necessário reiniciar a página para navegar entre as rotas ;) 
