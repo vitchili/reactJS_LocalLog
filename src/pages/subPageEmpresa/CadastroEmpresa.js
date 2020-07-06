@@ -3,19 +3,34 @@ import '../../styleComponents/empresa.css';
 import {Link} from 'react-router-dom';
 
 class CadastroEmpresa extends React.Component{    
+    constructor(props){
+        super(props)
+        this.state = {
+            nome : '',
+            desc : '',
+            logradouro : '',
+            numero : '',
+            complemento : '',
+            bairro : '',
+            cidade : '',
+            telefone : '',
+            catGeral : '',
+            catEspecifica : ''
+        }
+    }
     render(){
         return(
             <div className="divCadastro">
                 <h1>Cadastrar estabelecimento</h1>
-                <form action="/getDadosCadastro" method="POST" className="formCadastro">
-                    <p>Nome*: <input type="text" name="nome" className="inputTextForm"/></p>
-                    <p>Descrição*: <input type="text" name="desc" className="inputTextForm"/></p>
-                    <p>Logradouro*: <input type="text" name="logradouro" className="inputTextForm"/></p>
-                    <p>Número*: <input type="number" name="numero" className="inputTextForm"/></p>
-                    <p> Complemento: <input type="text" name="complemento" className="inputTextForm"/></p>
-                    <p> Bairro*: <input type="text" name="bairro" className="inputTextForm"/></p>
-                    <p> Cidade*: <input type="text" name="cidade" className="inputTextForm"/></p>
-                    <p> Telefone*: <input type="text" name="telefone" className="inputTextForm"/></p> 
+                <form className="formCadastro">
+                    <p>Nome*: <input type="text" id="nome" className="inputTextForm" onChange={(event) => {this.setState({nome : event.target.value})}}/></p>
+                    <p>Descrição*: <input type="text" id="desc" className="inputTextForm" onChange={(event) => {this.setState({desc : event.target.value})}}/></p>
+                    <p>Logradouro*: <input type="text" id="logradouro" className="inputTextForm" onChange={(event) => {this.setState({logradouro : event.target.value})}}/></p>
+                    <p>Número*: <input type="number" id="numero" className="inputTextForm" onChange={(event) => {this.setState({numero : event.target.value})}}/></p>
+                    <p> Complemento: <input type="text" id="complemento" className="inputTextForm" onChange={(event) => {this.setState({complemento : event.target.value})}}/></p>
+                    <p> Bairro*: <input type="text" id="bairro" className="inputTextForm" onChange={(event) => {this.setState({bairro : event.target.value})}}/></p>
+                    <p> Cidade*: <input type="text" id="cidade" className="inputTextForm" onChange={(event) => {this.setState({cidade : event.target.value})}}/></p>
+                    <p> Telefone*: <input type="text" id="telefone" className="inputTextForm" onChange={(event) => {this.setState({telefone : event.target.value})}}/></p> 
                     <br/>
                     <p>
                         Categoria geral*:&nbsp; 
@@ -105,9 +120,9 @@ class CadastroEmpresa extends React.Component{
                             <option value="automoveis">Automóveis</option>
                         </select>
                     </p>
-                    <p>Imagem do estabelecimento*:<br/>
-                    <small>(Max-width: 800px)</small>&nbsp;<input type="file" id="imageEstabelecimento"/></p>
-                    <input type="submit" value="Confirmar" id="botaoConfirmar" />
+                    <Link to={`/getDadosCadastro/${this.state.nome}/${this.state.desc}/${this.state.logradouro}/${this.state.numero}/${this.state.complemento}/${this.state.bairro}/${this.state.cidade}/${this.state.telefone}`}>
+                        <input type="button" value="Confirmar" id="botaoConfirmar" />
+                    </Link>
                     <Link to="/empresa">    
                         <input type="button" value="Voltar" id="botaoVoltar"/>
                     </Link>

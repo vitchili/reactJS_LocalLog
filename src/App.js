@@ -14,6 +14,8 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import Contato from './pages/Contato';
 import Autenticate from './components/Autenticate';
+import ComoFunciona from './pages/ComoFunciona.js';
+import GetDadosCadastro from './components/GetDadosCadastro.js';
 
 class App extends React.Component{
   render(){
@@ -36,19 +38,20 @@ class App extends React.Component{
                     <VerticalHeader /> 
                 </Route>
                 <Route path="/cliente">
-                    <Cliente />
-                    <Route path="/cliente/entretenimento">
-                        <EntretenimentoCliente /> 
+                    <Cliente />    
+                    <VerticalHeader />
+                    <Header />
+                    <Route path="/cliente/entretenimento">    
+                        <EntretenimentoCliente />
                     </Route>
                     <Route path="/cliente/produtos">
-                        <ProdutosCliente /> 
+                        <ProdutosCliente />
                     </Route>
                     <Route path="/cliente/servicos">
-                        <ServicosCliente /> 
+                        <ServicosCliente />
                     </Route>
-                    <Header />
-                    <VerticalHeader />
                 </Route>
+                
                 <Route path="/login">
                     <Header />
                     <Login />
@@ -59,11 +62,11 @@ class App extends React.Component{
                     <Header />
                     <Footer />
                 </Route>
-{/*                 <Route path="/autenticate/:user/:password">
-                    <Autenticate /> 
+                <Route path="/como-funciona">
+                    <ComoFunciona />
                     <Header />
+                    <Footer />
                 </Route>
- */}            
                 <Route 
                     exact 
                     path="/autenticate/:user/:password" 
@@ -75,6 +78,21 @@ class App extends React.Component{
                         <Autenticate  match={match} />
                     )} 
                 />
+                <Route path="/getDadosCadastro">
+                    <VerticalHeader />
+                <Route 
+                    exact 
+                    path="/getDadosCadastro/:nome/:desc/:logradouro/:numero/:complemento/:bairro/:cidade/:telefone" 
+                    location={this.props.location} 
+                    render={({ 
+                        location, 
+                        match 
+                    }) => (
+                        <GetDadosCadastro  match={match} />
+                    )} 
+                />
+                    <Header/>
+                </Route>
             </Switch>  
         </Router>
       </div>

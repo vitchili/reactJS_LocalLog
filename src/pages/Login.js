@@ -9,8 +9,7 @@ class Login extends React.Component {
         this.state = {
             usuarioDigitado : "",
             passwordDigitado: "",
-        /*     user : "usuario",
-            password : "123456" */
+             
         }
     }
     render(){

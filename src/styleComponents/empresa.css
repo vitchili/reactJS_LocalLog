@@ -82,13 +82,13 @@
 .divCadastro {
     position: absolute;
     padding: 5px;
-    width: 900px;
+    width: 700px;
     border-radius: 3px;
     box-shadow: 7px 7px 10px rgba(1,1,1,.8);
     height: 500px;
     margin: auto;
     top: 125px;
-    left: 300px;
+    left: 400px;
     overflow-y: scroll;
     background-color: white;
     color: #585858;

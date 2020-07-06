@@ -2,9 +2,6 @@ import React from 'react';
 import logoPNG from '../images/logoIcon.png';
 import iconCliente from '../images/iconCliente.png';
 import iconEmpresa from '../images/iconEmpresa.png';
-import logoFace from '../images/icon-face.png';
-import logoInsta from '../images/icon-insta.png';
-import logoWhats from '../images/icon-wpp.png';
 import { Link } from 'react-router-dom';
 class VerticalHeader extends React.Component{
     constructor(props){
@@ -12,20 +9,19 @@ class VerticalHeader extends React.Component{
         this.state = {
             nomePesq : '',
             filtradoPor : '',
-            userDigitado : '',
-            senhaDigitada : '',
-            dadosOficiaisUserPass : ''
+            filtroNome : false,
+            filtroCatGeral : false,
+            filtroCatEspecifica : false,
+            filtroLocalidade : false,
+            filtroPreco : false,
+            filtroPublico : false
         }
     }
     getDadoPesquisa = (event) => {
         this.setState({nomePesq : event.target.value})
+        console.log(this.state.nomePesq);
     }
-
-    getFiltroPesquisa = (event) => {
-        this.setState({filtradoPor : event.target.value})
-    }
-    
-    render(){
+   render(){
         return(
             <header className="headerVertical">
                 <img src={logoPNG} alt="logoIcon" className="logoIcon"/>
@@ -35,31 +31,17 @@ class VerticalHeader extends React.Component{
                         <br/>
                         <img src={iconCliente} alt="iconCliente" className="icon20"/> Cliente
                     </li>
-                    <li id="pesquisar"><br/>Pesquisar >
+                    <li id="pesquisar"><br/>Pesquisar &gt;
                         <ul>
                             <li id="independente" className="itemVerticalHeader">
                                 <p className="tituloPesq">Pesquisar</p>
                                 <p>Buscar: <br/>Locais, Produtos e Serviços: <input type="text" className="inputText" id="inputText"  onChange={(event) => {this.getDadoPesquisa(event)}} /></p>
-                                <p className="filtro">                    
-                                    Filtrar por:<br/>
-                                    <input type="radio" id="nome" name="filtro"/>
-                                        <label htmlFor="nome">Nome</label><br/>
-                                    <input type="radio" id="catGeral" name="filtro"/>
-                                        <label htmlFor="catGeral">Categoria Geral</label><br/>
-                                    <input type="radio" id="catEspecifica" name="filtro"/>
-                                        <label htmlFor="other">Categoria Específica</label><br/>
-                                    <input type="radio" id="preco" name="filtro"/>
-                                        <label htmlFor="preco">Preço</label><br/>
-                                    <input type="radio" id="localidade" name="filtro"/>
-                                        <label htmlFor="localidade">Localidade</label><br/>
-                                    <input type="radio" id="catEspecifica" name="filtro"/>
-                                        <label htmlFor="other">Público-alvo</label> 
-                                    
-                                </p>
-                                <Link to="/cliente">
-                                    <p>
-                                        <input type="button" value="Pesquisar" className="botaoPesquisar"/>
-                                    </p> 
+                                <input type="checkbox"/>Entretenimento<br/>
+                                <input type="checkbox"/>Produtos<br/>
+                                <input type="checkbox"/>Serviços<br/>
+                                 
+                                <Link to={`/cliente`}>
+                                    <input type="button" value="Pesquisar" className="botaoPesquisar"/>
                                 </Link>                         
                             </li>
                         </ul>
@@ -67,8 +49,8 @@ class VerticalHeader extends React.Component{
                     <li id="empresa" className="itemVerticalHeader">
                         <img src={iconEmpresa} alt="iconEmpresa" className="icon20"/> Empresa      
                     </li>
-                    <Link to="/login">
-                    <li id="cadastrar"><br/>Cadastrar/Modificar ></li>
+                    <Link to="/login" className="linkLogin">
+                    <li id="cadastrar"><br/>Cadastrar/Modificar &gt;</li>
                     </Link>                            
                         
                 </ul>
@@ -78,49 +60,3 @@ class VerticalHeader extends React.Component{
 }
 
 export default VerticalHeader;
-
-/*
-
-    getUserDigitado = (event) =>{
-        this.setState({userDigitado : event.target.value});
-        console.log(this.state.userDigitado);
-    }
-
-    getPassDigitado = (event) =>{
-        this.setState({senhaDigitada : event.target.value});
-        console.log(this.state.senhaDigitada);
-    }
-    //Daqui ate a linha 119 é uma comunicacao com o fake BD em localhost:8081.
-    //O proxy foi configurado antes da aplicação iniciar.
-    getResponse =  async() => {
-        //Aqui supomos uma conexao com BD que acessa os users e passwords
-        const response = await fetch('/userPass');
-        const body = await response.json();
-        if(response.status !== 200){
-            throw Error(body.message);
-        }
-        return body;
-    }
-    componentDidMount(){
-        this.getResponse()
-        .then(res =>{
-            const someData = res;
-            this.setState({ dadosOficiaisUserPass : someData});
-        })
-    }
-    validaUserPass = () => {
-        var validado = false;
-        for(var i=0;i<5; i++){
-            if((this.state.userDigitado === this.state.dadosOficiaisUserPass.usersPass[i].user) && (this.state.senhaDigitada === this.state.dadosOficiaisUserPass.usersPass[i].password)){
-                validado = true;
-               i=5;
-            }
-        }
-        if(validado === false){
-            for(var j=0; j<10; j++){
-                alert("Saia da página e tente novamente");
-            }
-            throw new Error("Usuário ou senha incorretos.");
-        }
-    }
-*/

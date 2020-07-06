@@ -116,6 +116,9 @@ li.itemVerticalHeader {
 #pesquisar:hover {
     background-color: #cccccc;
 }
+.linkLogin {
+    color: #585858;   
+   }
 #cadastrar {
     position: absolute;
     height: 40px;

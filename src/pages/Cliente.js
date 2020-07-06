@@ -6,11 +6,9 @@ import produtosImage from '../images/produtos.png';
 import servicosImage from '../images/servicos.png';
 class Cliente extends React.Component{
 
-    
     render(){    
         return(
-            <div className="corpoCliente">{/* 
-                <h1 className="tituloCliente">Pesquisa de Estabelecimentos</h1> */}
+            <div className="corpoCliente">
                 <ul>
                     <li className="acaoCliente">
                         <Link to="/cliente/entretenimento"><img src={entretenimentoImage} alt="entretenimentoImage" className="acoesImgCliente"/></Link>
